@@ -4,5 +4,8 @@ Rails.application.routes.draw do
       patch :complete
     end
   end
+
+  get :up, to: "todos#up"
+
   root to: "todos#index"
 end
